@@ -21,15 +21,14 @@ const TaskForm = ({ onAddTask }) => {
   return (
     <div className="flex justify-evenly">
     <form onSubmit={handleSubmit}>
-      <label className="text-blue-400">
-        Task Title:
-        <input
+      <input
           type="text"
+          placeholder="Enter your task"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
-        />
-      </label>
+      />
   
       <button type="submit" 
       className='px-4 py-2 rounded-2xl border-2 bg-blue-500 text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-300

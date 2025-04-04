@@ -32,6 +32,7 @@ const App = () => {
 
   return (
     <div>
+      <h1 className="text-3xl font-bold text-gray-800">To Do List</h1>
       <TaskForm onAddTask={handleAddTask} />
       <TaskList tasks={tasks} onDelete={handleDeleteTask} />
     </div>
