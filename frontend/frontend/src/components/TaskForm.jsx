@@ -21,8 +21,9 @@ const TaskForm = ({ onAddTask }) => {
   };
 
   return (
+    <div className="flex justify-evenly">
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className="text-blue-400">
         Task Title:
         <input
           type="text"
@@ -33,22 +34,19 @@ const TaskForm = ({ onAddTask }) => {
       </label>
       <label>
         Task Description:
-        <textarea
+        <textarea 
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required
         />
       </label>
-      <label>
-        Completed:
-        <input
-          type="checkbox"
-          checked={completed}
-          onChange={(e) => setCompleted(e.target.checked)}
-        />
-      </label>
-      <button type="submit">Add Task</button>
+  
+      <button type="submit" 
+      className='px-4 py-2 rounded-2xl border-2 bg-blue-500 text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-300
+      hover:shadow-lg transition duration-300 ease-in-out'>
+        Add Task</button>
     </form>
+    </div>
   );
 };
 

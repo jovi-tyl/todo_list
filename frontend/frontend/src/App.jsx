@@ -32,7 +32,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>Task Manager</h1>
       <TaskForm onAddTask={handleAddTask} />
       <TaskList tasks={tasks} onDelete={handleDeleteTask} />
     </div>
