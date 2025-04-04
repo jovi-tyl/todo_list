@@ -17,7 +17,7 @@ const addTask = async () => {
     return response.data;
 };
 
-const deleteTask = async () => {
+const deleteTask = async (id) => {
     const response = await api.delete(`/${id}`);
     return response.data;
 };
