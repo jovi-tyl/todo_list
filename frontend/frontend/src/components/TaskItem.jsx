@@ -13,7 +13,6 @@ const TaskItem = ({ task, onDelete }) => {
     return (
         <div>
             Title: {task.title}
-            Description: {task.description}
             Completed: {task.completed ? "Yes" : "No"}
             <button onClick={handleDelete}>Delete</button>
         </div>
