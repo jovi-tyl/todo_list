@@ -8,7 +8,7 @@ const TaskItem = ({task, onDelete}) => {
         } catch (error) {
           console.error("Error detected", error);  
         }
-
+    };
     return (
         <div>
             Title: {task.title}
@@ -17,8 +17,7 @@ const TaskItem = ({task, onDelete}) => {
             <button onClick={handleDelete}>Delete</button>
         </div>
     );
-    
-    };
+
 };
 
 
