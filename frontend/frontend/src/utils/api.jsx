@@ -12,7 +12,7 @@ const getTasks = async () => {
     return response.data;
 };
     
-const addTask = async () => {
+const addTask = async (task) => {
     const response = await api.post('/', task);
     return response.data;
 };
